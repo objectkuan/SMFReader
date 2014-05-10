@@ -1,0 +1,232 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Artist3D.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Artist3D.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ARTIST3D_DIALOG DIALOGEX 0, 0, 450, 311
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Artist3D"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_RENDER,"Static",SS_BLACKFRAME,7,7,296,289
+    EDITTEXT        IDC_EDIT_PATH,313,17,95,14,ES_AUTOHSCROLL
+    LTEXT           "导入smf文件：",IDC_STATIC,314,7,46,8
+    PUSHBUTTON      "浏览",IDC_BUTTON_BROWSE,413,17,29,14
+    PUSHBUTTON      "显示",IDC_BUTTON_SHOW,313,257,42,14
+    PUSHBUTTON      "面消隐",IDC_BUTTON_FACEHIDDEN,314,74,43,14
+    CONTROL         "",IDC_SLIDER_XSCALE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,335,107,100,15
+    LTEXT           "xScale",IDC_STATIC,315,111,20,8
+    LTEXT           "视图:",IDC_STATIC,315,42,17,8
+    CONTROL         "正平行投影",IDC_RADIO_ORTH,"Button",BS_AUTORADIOBUTTON,340,41,50,10
+    CONTROL         "透视投影",IDC_RADIO_PRO,"Button",BS_AUTORADIOBUTTON,389,41,43,10
+    CONTROL         "",IDC_SLIDER_YSCALE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,335,123,100,15
+    LTEXT           "yScale",IDC_STATIC,315,127,20,8
+    CONTROL         "",IDC_SLIDER_ZSCALE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,335,139,100,15
+    LTEXT           "zScale",IDC_STATIC,315,143,20,8
+    CONTROL         "",IDC_SLIDER_XTRAN,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,335,155,100,15
+    LTEXT           "xTran",IDC_STATIC,315,159,19,8
+    CONTROL         "",IDC_SLIDER_YTRAN,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,335,173,100,15
+    LTEXT           "yTran",IDC_STATIC,315,177,19,8
+    CONTROL         "",IDC_SLIDER_ZTRAN,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,335,189,100,15
+    LTEXT           "zTran",IDC_STATIC,315,193,18,8
+    CONTROL         "",IDC_SLIDER_XROTA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,335,205,100,15
+    LTEXT           "xRota",IDC_STATIC,315,209,19,8
+    CONTROL         "",IDC_SLIDER_YROTA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,335,221,100,15
+    LTEXT           "yRota",IDC_STATIC,315,225,19,8
+    CONTROL         "",IDC_SLIDER_ZROTA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,335,237,100,15
+    LTEXT           "zRota",IDC_STATIC,315,241,18,8
+    CONTROL         "",IDC_SLIDER_MAXSCALE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,345,90,90,15
+    LTEXT           "MaxScale",IDC_STATIC,315,94,29,8
+    CONTROL         "常规",IDC_RADIO_NORMALLOOK,"Button",BS_AUTORADIOBUTTON,340,58,22,10
+    CONTROL         "线消隐",IDC_RADIO_LINEHIDDEN,"Button",BS_AUTORADIOBUTTON,367,58,29,10
+    CONTROL         "真实感绘制",IDC_RADIO_REAL,"Button",BS_AUTORADIOBUTTON,401,59,44,10
+    LTEXT           "显示:",IDC_STATIC,315,58,20,8
+    PUSHBUTTON      "Z面消隐正平行视图",IDC_BUTTON_ZBUFFER,362,289,74,14
+    PUSHBUTTON      "Y面消隐正平行视图",IDC_BUTTON_YBUFFER,362,273,74,14
+    PUSHBUTTON      "X面消隐正平行视图",IDC_BUTTON_XBUFFER,362,257,74,14
+END
+
+IDD_DIALOG_FIGURE DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Figure"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Artist3D.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "Artist3D.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ARTIST3D_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 443
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+
+    IDD_DIALOG_FIGURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Artist3D(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Artist3D.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
